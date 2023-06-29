@@ -1,0 +1,131 @@
+#boxTitle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 124, 253);
+    width: 220px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border-style: double;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+body{
+    background: linear-gradient(to bottom, #e986bf, #860cb6);
+}
+
+#boxGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#azul{
+ background-color: rgb(77, 77, 236);
+ height: 150px;
+ width: 150px;
+ border-bottom-right-radius: 95px;
+ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#vermelho{
+background-color: rgb(210, 60, 60);
+height: 150px;
+width: 150px;
+border-top-right-radius: 95px;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#verde{
+background-color: rgb(88, 230, 88);
+height: 150px;
+width: 150px;
+border-top-left-radius: 95px;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#amarelo{
+    background-color: rgb(246, 246, 79);
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 95px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+table td{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+table{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    border-radius: 95px;
+    border-style:groove;
+    border-width: 10px;
+}
+
+
+#titulo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+#jogar{
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 auto;
+}
+
+#jogar:after{
+  background-color: rgb(161, 124, 253);
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+#jogar:hover:after{
+    transform: translate(0, 0);
+}
+#jogar:active{
+    background-color: #ffdeda;
+    outline: 0;  
+}
+#jogar:hover{
+    outline: 0;
+}
+@media (min-width: 768px) {
+    #jogar {
+      padding: 0 40px;
+    }
+  }
